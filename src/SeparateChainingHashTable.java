@@ -88,7 +88,22 @@ public class SeparateChainingHashTable<AnyType> {
     }
 
     private void rehash() {
-        // FINISH ME
+        List<AnyType> [] oldLists = theLists;
+
+        theLists = new List[nextPrime((2 * theLists.length))];
+
+        // create empty larger table
+        for(int j = 0; j < theLists.length; j++ ) {
+            theLists[j] = new LinkedList<>();
+        }
+
+            // copy table over
+            currentSize = 0;
+            for( List<AnyType> list: oldLists){
+                for(AnyType item : list){
+                    insert(item);
+                }
+        }
     }
 
     private int myhash(AnyType x) {
