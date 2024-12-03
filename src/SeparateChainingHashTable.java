@@ -39,13 +39,16 @@ public class SeparateChainingHashTable<AnyType> {
      */
     public void insert(AnyType x) {
         // check if element already present
-        if(contains(x)){
+        if(!contains(x)){
+            //report new size
+            currentSize ++;
+
             // calculate index & add it
             int newIndex = myhash(x);
             theLists[newIndex].add(x);
 
             // Rehash if needed
-            if(currentSize + 1 > DEFAULT_TABLE_SIZE){
+            if(currentSize > DEFAULT_TABLE_SIZE){
                 rehash();
             }
         }
@@ -63,8 +66,9 @@ public class SeparateChainingHashTable<AnyType> {
             int possibleIndex = myhash(x);
 
             theLists[possibleIndex].remove(x);
-
         }
+        // report new table size
+         currentSize--;
     }
 
     /**
@@ -77,7 +81,7 @@ public class SeparateChainingHashTable<AnyType> {
        int possibleIndex = myhash(x);
 
        List<AnyType> possibleBucket = theLists[possibleIndex];
-       return possibleBucket.equals(x);
+       return possibleBucket.contains(x);
 
     }
 
@@ -86,12 +90,14 @@ public class SeparateChainingHashTable<AnyType> {
      */
     public void makeEmpty() {
         // delete all elements
+
         for (List<AnyType> list : theLists) {
-            for (AnyType item : list) {
-                remove(item);
+            list.clear();
             }
+        // report new size
+        currentSize = 0;
         }
-    }
+
 
     /**
      * A hash routine for String objects.
