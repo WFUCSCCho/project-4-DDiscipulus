@@ -85,7 +85,12 @@ public class SeparateChainingHashTable<AnyType> {
      * Make the hash table logically empty.
      */
     public void makeEmpty() {
-        for(theLists )
+        // delete all elements
+        for (List<AnyType> list : theLists) {
+            for (AnyType item : list) {
+                remove(item);
+            }
+        }
     }
 
     /**
