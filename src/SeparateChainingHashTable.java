@@ -38,7 +38,17 @@ public class SeparateChainingHashTable<AnyType> {
      * @param x the item to insert.
      */
     public void insert(AnyType x) {
-        if()
+        // check if element already present
+        if(contains(x)){
+            // calculate index & add it
+            int newIndex = myhash(x);
+            theLists[newIndex].add(x);
+
+            // Rehash if needed
+            if(currentSize + 1 > DEFAULT_TABLE_SIZE){
+                rehash();
+            }
+        }
     }
 
     /**
@@ -75,7 +85,7 @@ public class SeparateChainingHashTable<AnyType> {
      * Make the hash table logically empty.
      */
     public void makeEmpty() {
-        // FINISH ME
+        for(theLists )
     }
 
     /**
