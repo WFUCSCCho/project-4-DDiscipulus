@@ -38,7 +38,7 @@ public class SeparateChainingHashTable<AnyType> {
      * @param x the item to insert.
      */
     public void insert(AnyType x) {
-        // FINISH ME
+        if()
     }
 
     /**
@@ -47,7 +47,14 @@ public class SeparateChainingHashTable<AnyType> {
      * @param x the item to remove.
      */
     public void remove(AnyType x) {
-        // FINISH ME
+        // check if X is in table
+        if (contains(x)){
+            // if so find and remove
+            int possibleIndex = myhash(x);
+
+            theLists[possibleIndex].remove(x);
+
+        }
     }
 
     /**
@@ -57,7 +64,11 @@ public class SeparateChainingHashTable<AnyType> {
      * @return true if x is not found.
      */
     public boolean contains(AnyType x) {
-        // FINISH ME
+       int possibleIndex = myhash(x);
+
+       List<AnyType> possibleBucket = theLists[possibleIndex];
+       return possibleBucket.equals(x);
+
     }
 
     /**
