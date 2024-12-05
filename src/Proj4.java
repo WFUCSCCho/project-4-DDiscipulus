@@ -1,3 +1,9 @@
+/**
+ * @ Proj4.Java
+ * @ This program tests the time used by various hash table operations on lists.
+ * @ author: Destiny
+ * @ date: Dec 3, 2024
+ */
 import java.io.*;
 import java.util.*;
 

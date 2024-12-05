@@ -1,0 +1,91 @@
+_____________________________________________20______________________________________________________
+Sorted Trial for 20 lines
+    Insert Time: 3.804E-4 sec
+    Search Time: 2.32E-5 sec
+    Remove Time: 2.55E-5 sec
+
+shuffled Trial for 20 lines
+    Insert Time: 5.76E-5 sec
+    Search Time: 1.87E-5 sec
+    Remove Time: 3.22E-5 sec
+
+Reverse Trial for 20 lines
+    Insert Time: 7.42E-5 sec
+    Search Time: 1.85E-5 sec
+    Remove Time: 1.8E-5 sec
+_____________________________________________100______________________________________________________
+Sorted Trial for 100 lines
+    Insert Time: 4.914E-4 sec
+    Search Time: 1.254E-4 sec
+    Remove Time: 1.241E-4 sec
+
+shuffled Trial for 100 lines
+    Insert Time: 3.075E-4 sec
+    Search Time: 7.27E-5 sec
+    Remove Time: 9.37E-5 sec
+
+Reverse Trial for 100 lines
+    Insert Time: 2.729E-4 sec
+    Search Time: 1.534E-4 sec
+    Remove Time: 1.381E-4 sec
+_____________________________________________300______________________________________________________
+Sorted Trial for 300 lines
+    Insert Time: 0.0024405 sec
+    Search Time: 2.767E-4 sec
+    Remove Time: 3.276E-4 sec
+
+shuffled Trial for 300 lines
+    Insert Time: 0.0013068 sec
+    Search Time: 2.127E-4 sec
+    Remove Time: 2.026E-4 sec
+
+Reverse Trial for 300 lines
+    Insert Time: 0.0025414 sec
+    Search Time: 1.863E-4 sec
+    Remove Time: 2.103E-4 sec
+_____________________________________________50______________________________________________________
+Sorted Trial for 50 lines
+    Insert Time: 3.054E-4 sec
+    Search Time: 4.35E-5 sec
+    Remove Time: 6.56E-5 sec
+
+shuffled Trial for 50 lines
+    Insert Time: 1.586E-4 sec
+    Search Time: 4.79E-5 sec
+    Remove Time: 7.44E-5 sec
+
+Reverse Trial for 50 lines
+    Insert Time: 1.713E-4 sec
+    Search Time: 5.39E-5 sec
+    Remove Time: 4.72E-5 sec
+
+_____________________________________________200______________________________________________________
+Sorted Trial for 200 lines
+	 Insert Time: 0.0014845 sec
+	 Search Time: 2.104E-4 sec
+	 Remove Time: 2.179E-4 sec
+	
+shuffled Trial for 200 lines
+	 Insert Time: 9.673E-4 sec
+	 Search Time: 2.351E-4 sec
+	 Remove Time: 2.231E-4 sec
+	
+Reverse Trial for 200 lines
+	 Insert Time: 0.0010066 sec
+	 Search Time: 2.198E-4 sec
+	 Remove Time: 2.567E-4 sec
+_____________________________________________200______________________________________________________
+Sorted Trial for 200 lines
+	 Insert Time: 0.0012046 sec
+	 Search Time: 1.963E-4 sec
+	 Remove Time: 2.176E-4 sec
+	
+shuffled Trial for 200 lines
+	 Insert Time: 0.0019733 sec
+	 Search Time: 1.933E-4 sec
+	 Remove Time: 1.937E-4 sec
+	
+Reverse Trial for 200 lines
+	 Insert Time: 8.521E-4 sec
+	 Search Time: 1.511E-4 sec
+	 Remove Time: 1.958E-4 sec

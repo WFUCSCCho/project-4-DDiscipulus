@@ -1,3 +1,9 @@
+/**
+ * @ SeparateChainingHashTable.Java
+ * @ This program implements a hash table
+ * @ author: Destiny
+ * @ date: Dec 3, 2024
+ */
 import java.util.LinkedList;
 import java.util.List;
 
