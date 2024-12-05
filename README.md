@@ -84,7 +84,8 @@ Insertion, search, and deletion running time (already sorted):
 ![Sorted Hash Operations](https://github.com/user-attachments/assets/aed64533-47a9-4ae5-8308-b04a04c9d5d7)
 
 Insertion, search, and deletion running time (shuffled):
-[Shuffled Hash Operations.pdf](https://github.com/user-attachments/files/18017837/Shuffled.Hash.Operations.pdf)
+![Shuffled Hash Operations](https://github.com/user-attachments/assets/976370d8-a473-484a-9d7f-b15649a48b7c)
+
 
 
 Insertion, search, and deletion running time (reversed):
