@@ -81,23 +81,28 @@ each case. Take a screenshot of your graph and put them here by modifying this f
 it to this repository.
 
 Insertion, search, and deletion running time (already sorted):
-
-![Firefly picture of a cat 86147](https://github.com/user-attachments/assets/8b2d008e-3011-4979-97b8-fa2e9886a01a)
-
+![Sorted Hash Operations](https://github.com/user-attachments/assets/aed64533-47a9-4ae5-8308-b04a04c9d5d7)
 
 Insertion, search, and deletion running time (shuffled):
+![Shuffled Hash Operations](https://github.com/user-attachments/assets/976370d8-a473-484a-9d7f-b15649a48b7c)
+
+
 
 Insertion, search, and deletion running time (reversed):
+![Reversed Hash Operations](https://github.com/user-attachments/assets/845f0877-ac13-410f-9b57-ff6e32cd1c8c)
 
 ## 5. **Document your Dataset and Results**
 Document the source of your dataset and any modifications you made to it. Describe the results of your analysis and 
 how it compares to the theoretical performance of the hash table operations.
 
-Dataset Source: // FINISH ME
+Dataset Source:  https://www.kaggle.com/datasets/joebeachcapital/fast-food
 
-Dataset Modifications ("None" if unchanged): // FINISH ME
+Dataset Modifications ("None" if unchanged):
 
-Result Analysis: // FINISH ME
+I have removed some of the data, such as drinks, because they don't have macros like proteins or carbs and caused issues with parsing. I also removed special symbols, such as trademark symbols, that caused problems when reading the data. Additionally, I removed extra commas and hyphens to prevent parsing errors.
+
+Result Analysis: 
+In theory, my hash table should have constant time for all its operations for average case and linear time for the worst case. Looking at my graphs my insertion is consistently pretty close to linear, the worst case scenario. However, the search and deletion seems to be much more efficient. While not quite a constant function they approach or are close to one. I assume insertion is be driven up by the fact that many of my values (200 & 300) require rehashing which adds to resources needed by insertion pretty dramatically. Overall,  while my results are not perfect they are pretty close to what'd we expect.
 
 ## Submission:
 

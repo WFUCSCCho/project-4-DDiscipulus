@@ -1,3 +1,9 @@
+/**
+ * @ SeparateChainingHashTable.Java
+ * @ This program implements a hash table
+ * @ author: Destiny
+ * @ date: Dec 3, 2024
+ */
 import java.util.LinkedList;
 import java.util.List;
 
@@ -38,7 +44,20 @@ public class SeparateChainingHashTable<AnyType> {
      * @param x the item to insert.
      */
     public void insert(AnyType x) {
-        // FINISH ME
+        // check if element already present
+        if(!contains(x)){
+            //report new size
+            currentSize ++;
+
+            // calculate index & add it
+            int newIndex = myhash(x);
+            theLists[newIndex].add(x);
+
+            // Rehash if needed
+            if(currentSize > DEFAULT_TABLE_SIZE){
+                rehash();
+            }
+        }
     }
 
     /**
@@ -47,7 +66,15 @@ public class SeparateChainingHashTable<AnyType> {
      * @param x the item to remove.
      */
     public void remove(AnyType x) {
-        // FINISH ME
+        // check if X is in table
+        if (contains(x)){
+            // if so find and remove
+            int possibleIndex = myhash(x);
+
+            theLists[possibleIndex].remove(x);
+        }
+        // report new table size
+         currentSize--;
     }
 
     /**
@@ -57,15 +84,26 @@ public class SeparateChainingHashTable<AnyType> {
      * @return true if x is not found.
      */
     public boolean contains(AnyType x) {
-        // FINISH ME
+       int possibleIndex = myhash(x);
+
+       List<AnyType> possibleBucket = theLists[possibleIndex];
+       return possibleBucket.contains(x);
+
     }
 
     /**
      * Make the hash table logically empty.
      */
     public void makeEmpty() {
-        // FINISH ME
-    }
+        // delete all elements
+
+        for (List<AnyType> list : theLists) {
+            list.clear();
+            }
+        // report new size
+        currentSize = 0;
+        }
+
 
     /**
      * A hash routine for String objects.
@@ -88,7 +126,24 @@ public class SeparateChainingHashTable<AnyType> {
     }
 
     private void rehash() {
-        // FINISH ME
+        List<AnyType>[] oldLists = theLists;
+
+        theLists = new List[nextPrime(2 * theLists.length)];
+
+        // Create empty larger table
+        for (int j = 0; j < theLists.length; j++) {
+            theLists[j] = new LinkedList<>();
+        }
+
+        // Copy items from the old table to the new one directly
+        for (List<AnyType> list : oldLists) {
+            for (AnyType item : list) {
+                int hashVal = myhash(item);
+                theLists[hashVal].add(item); // Directly insert into the new table
+            }
+        }
+
+        currentSize = 0;
     }
 
     private int myhash(AnyType x) {
