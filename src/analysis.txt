@@ -61,31 +61,16 @@ Reverse Trial for 50 lines
 
 _____________________________________________200______________________________________________________
 Sorted Trial for 200 lines
-	 Insert Time: 0.0014845 sec
-	 Search Time: 2.104E-4 sec
-	 Remove Time: 2.179E-4 sec
+	 Insert Time: 0.0018009 sec
+	 Search Time: 2.898E-4 sec
+	 Remove Time: 3.313E-4 sec
 	
 shuffled Trial for 200 lines
-	 Insert Time: 9.673E-4 sec
-	 Search Time: 2.351E-4 sec
-	 Remove Time: 2.231E-4 sec
+	 Insert Time: 9.533E-4 sec
+	 Search Time: 2.082E-4 sec
+	 Remove Time: 2.742E-4 sec
 	
 Reverse Trial for 200 lines
-	 Insert Time: 0.0010066 sec
-	 Search Time: 2.198E-4 sec
-	 Remove Time: 2.567E-4 sec
-_____________________________________________200______________________________________________________
-Sorted Trial for 200 lines
-	 Insert Time: 0.0012046 sec
-	 Search Time: 1.963E-4 sec
-	 Remove Time: 2.176E-4 sec
-	
-shuffled Trial for 200 lines
-	 Insert Time: 0.0019733 sec
-	 Search Time: 1.933E-4 sec
-	 Remove Time: 1.937E-4 sec
-	
-Reverse Trial for 200 lines
-	 Insert Time: 8.521E-4 sec
-	 Search Time: 1.511E-4 sec
-	 Remove Time: 1.958E-4 sec
+	 Insert Time: 0.0012861 sec
+	 Search Time: 2.414E-4 sec
+	 Remove Time: 2.815E-4 sec
